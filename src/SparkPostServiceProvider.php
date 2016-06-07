@@ -34,11 +34,7 @@ class SparkPostServiceProvider extends ServiceProvider
     protected function registerBindings(Container $container, ConfigRepository $config)
     {
         $container->singleton(SparkPostService::class, function () use ($config) {
-            $sparkpost = new SparkPostService();
-            /** @noinspection PhpUndefinedMethodInspection */
-            $this->configureService($sparkpost, $config[self::CONFIG_KEY]);
-
-            return $sparkpost;
+            return new SparkPostService($config[self::CONFIG_KEY]);
         });
 
         $container->alias(SparkPostService::class, SparkPostServiceContract::class);
