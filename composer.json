@@ -1,0 +1,32 @@
+{
+  "name": "nordsoftware/lumen-sparkpost",
+  "description": "SparkPost module for the Lumen PHP framework.",
+  "keywords": [
+    "lumen",
+    "sparkpost",
+    "laravel"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": ">=5.5.0",
+    "sparkpost/php-sparkpost": "^1.2"
+  },
+  "require-dev": {
+    "laravel/lumen-framework": "^5.1",
+    "codeception/codeception": "^2.1",
+    "codeception/specify": "^0.4.3",
+    "codeception/verify": "^0.3.0",
+    "satooshi/php-coveralls": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Nord\\Lumen\\SparkPost\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "classmap": [
+      "tests/"
+    ]
+  }
+}
