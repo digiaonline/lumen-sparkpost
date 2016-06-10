@@ -11,5 +11,4 @@ class FractalTest extends \Codeception\TestCase\Test
      * @var \UnitTester
      */
     protected $tester;
-
 }
