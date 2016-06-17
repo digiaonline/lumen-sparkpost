@@ -7,7 +7,6 @@ use Nord\Lumen\SparkPost\SparkPostService;
  */
 class SparkPostTest extends \Codeception\TestCase\Test
 {
-
     use \Codeception\Specify;
 
     /**
@@ -21,6 +20,6 @@ class SparkPostTest extends \Codeception\TestCase\Test
      * @expectedExceptionMessage You must provide an API key
      */    public function testServiceConfigNoApiKey()
     {
-    new SparkPostService(['config' => 'invalid']);
+        new SparkPostService(['config' => 'invalid']);
     }
 }
