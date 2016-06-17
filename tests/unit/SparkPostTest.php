@@ -16,11 +16,6 @@ class SparkPostTest extends \Codeception\TestCase\Test
     protected $tester;
 
     /**
-     * @var \Nord\Lumen\Fractal\SparkPostService
-     */
-    protected $service;
-
-    /**
      * Tests the with missing API key.
      * @expectedException        Exception
      * @expectedExceptionMessage You must provide an API key
