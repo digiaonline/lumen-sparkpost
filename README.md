@@ -1,4 +1,6 @@
 # Lumen SparkPost
+
+[![Build Status](https://travis-ci.org/nordsoftware/lumen-sparkpost.svg?branch=develop)](https://travis-ci.org/nordsoftware/lumen-sparkpost)
 [![Code Climate](https://codeclimate.com/github/nordsoftware/lumen-sparkpost/badges/gpa.svg)](https://codeclimate.com/github/nordsoftware/lumen-sparkpost)
 [![Latest Stable Version](https://poser.pugx.org/nordsoftware/lumen-sparkpost/version)](https://packagist.org/packages/nordsoftware/lumen-sparkpost)
 [![Total Downloads](https://poser.pugx.org/nordsoftware/lumen-sparkpost/downloads)](https://packagist.org/packages/nordsoftware/lumen-sparkpost)
@@ -9,7 +11,7 @@
 
 ## Requirements
 
-- PHP 5.5 or newer
+- PHP 5.6 or newer
 - [Lumen](https://lumen.laravel.com/) 5.1 or newer
 - [Composer](http://getcomposer.org)
 
