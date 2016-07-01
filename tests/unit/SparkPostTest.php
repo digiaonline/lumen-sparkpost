@@ -28,7 +28,31 @@ class SparkPostTest extends \Codeception\TestCase\Test
      */    public function testServiceConfigWithValidApiKey()
     {
         // Expects no exceptions
-        $service = new SparkPostService(['client' => ['key' => 'testkey']]);
+        new SparkPostService(['client' => ['key' => 'testkey']]);
     }
 
+    /**
+     * Tests send with unauthorised API key.
+     * @expectedException        Exception
+     * @expectedExceptionMessage Request forbidden
+     */    public function testSendWithUnauthorisedKey()
+    {
+        // Expects no exceptions
+        $sparkpost = new SparkPostService(['client' => ['key' => 'unauthorised']]);
+
+        $sparkpost->send([
+            'from' => [
+                'name' => 'From Envelope',
+                'email' => 'from@sparkpostbox.com',
+            ],
+            'recipients' => [
+                [
+                    'address' => [
+                        'email' => 'john.doe@example.com',
+                    ],
+                ],
+            ],
+            'template' => 'my-first-email',
+        ]);
+    }
 }
