@@ -8,6 +8,11 @@
   ],
   "type": "library",
   "license": "MIT",
+  "config": {
+    "platform": {
+      "php": "5.6"
+    }
+  },
   "require": {
     "php": ">=5.6.0",
     "sparkpost/php-sparkpost": "^1.2"
