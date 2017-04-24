@@ -2,7 +2,9 @@
 
 namespace Nord\Lumen\SparkPost\Contracts;
 
-use SparkPost\APIResponseException;
+use SparkPost\SparkPostException;
+use SparkPost\SparkPostPromise;
+use SparkPost\SparkPostResponse;
 
 /**
  * Interface SparkPostServiceContract.
@@ -41,9 +43,9 @@ interface SparkPostServiceContract
      *
      * @param array $config
      *
-     * @return array
+     * @return SparkPostPromise|SparkPostResponse depending on whether asynchronous mode is enabled or not
      *
-     * @throws APIResponseException
+     * @throws SparkPostException
      */
     public function send(array $config);
 }

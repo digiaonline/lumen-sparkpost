@@ -8,16 +8,22 @@
   ],
   "type": "library",
   "license": "MIT",
+  "config": {
+    "platform": {
+      "php": "5.6"
+    }
+  },
   "require": {
     "php": ">=5.6.0",
-    "sparkpost/php-sparkpost": "^1.2"
+    "guzzlehttp/guzzle": "^6.2",
+    "php-http/guzzle6-adapter": "^1.1",
+    "sparkpost/sparkpost": "^2.1"
   },
   "require-dev": {
     "laravel/lumen-framework": "^5.1",
     "codeception/codeception": "^2.1",
     "codeception/specify": "^0.4.3",
-    "codeception/verify": "^0.3.0",
-    "satooshi/php-coveralls": "^1.0"
+    "codeception/verify": "^0.3.0"
   },
   "autoload": {
     "psr-4": {

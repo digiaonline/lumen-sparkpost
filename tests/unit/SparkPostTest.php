@@ -33,12 +33,12 @@ class SparkPostTest extends \Codeception\TestCase\Test
 
     /**
      * Tests send with unauthorised API key.
-     * @expectedException        Exception
-     * @expectedExceptionMessage Request forbidden
-     */    public function testSendWithUnauthorisedKey()
+     * @expectedException \SparkPost\SparkPostException
+     */
+    public function testSendWithUnauthorisedKey()
     {
         // Expects no exceptions
-        $sparkpost = new SparkPostService(['client' => ['key' => 'unauthorised']]);
+        $sparkpost = new SparkPostService(['client' => ['key' => 'unauthorised', 'async' => false]]);
 
         $sparkpost->send([
             'from' => [
