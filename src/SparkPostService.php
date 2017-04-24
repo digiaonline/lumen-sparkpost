@@ -3,7 +3,7 @@
 namespace Nord\Lumen\SparkPost;
 
 use GuzzleHttp\Client;
-use Ivory\HttpAdapter\Guzzle6HttpAdapter;
+use Http\Adapter\Guzzle6\Client as GuzzleAdapter;
 use Nord\Lumen\SparkPost\Contracts\SparkPostServiceContract;
 use SparkPost\SparkPost;
 
@@ -25,7 +25,7 @@ class SparkPostService implements SparkPostServiceContract
     public function __construct(array $config)
     {
         $clientConfig = isset($config['client']) ? $config['client'] : [];
-        $this->client = new SparkPost(new Guzzle6HttpAdapter(new Client()), $clientConfig);
+        $this->client = new SparkPost(new GuzzleAdapter(new Client()), $clientConfig);
     }
 
     /**
@@ -33,6 +33,6 @@ class SparkPostService implements SparkPostServiceContract
      */
     public function send(array $config)
     {
-        return $this->client->transmission->send($config);
+        return $this->client->transmissions->post($config);
     }
 }

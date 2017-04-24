@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.org/nordsoftware/lumen-sparkpost.svg?branch=master)](https://travis-ci.org/nordsoftware/lumen-sparkpost)
 [![Coverage Status](https://coveralls.io/repos/github/nordsoftware/lumen-sparkpost/badge.svg?branch=master)](https://coveralls.io/github/nordsoftware/lumen-sparkpost?branch=master)
 [![Code Climate](https://codeclimate.com/github/nordsoftware/lumen-sparkpost/badges/gpa.svg)](https://codeclimate.com/github/nordsoftware/lumen-sparkpost)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/nordsoftware/lumen-sparkpost/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/nordsoftware/lumen-sparkpost/?branch=master)
 [![Latest Stable Version](https://poser.pugx.org/nordsoftware/lumen-sparkpost/version)](https://packagist.org/packages/nordsoftware/lumen-sparkpost)
 [![Total Downloads](https://poser.pugx.org/nordsoftware/lumen-sparkpost/downloads)](https://packagist.org/packages/nordsoftware/lumen-sparkpost)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
@@ -31,7 +32,9 @@ composer require nordsoftware/lumen-sparkpost
 Copy the configuration template in `config/sparkpost.php` to your application's `config` directory and modify according to your needs. 
 For more information see the [Configuration Files](http://lumen.laravel.com/docs/configuration#configuration-files) section in the Lumen documentation.
 
-The only required config is the API `key`, which you can get on your SparkPost account pages.
+The only required config is the API `key`, which you can get on your SparkPost account pages. Please note that the 
+default configuration uses synchronous sending mode. If you want to change that, set the `async` option to `true` 
+instead.
 
 ### Bootstrapping
 
