@@ -1,9 +1,9 @@
 # Lumen SparkPost
 
-[![Build Status](https://travis-ci.org/nordsoftware/lumen-sparkpost.svg?branch=main)](https://travis-ci.org/nordsoftware/lumen-sparkpost)
-[![Coverage Status](https://coveralls.io/repos/github/nordsoftware/lumen-sparkpost/badge.svg?branch=main)](https://coveralls.io/github/nordsoftware/lumen-sparkpost?branch=main)
+[![Test](https://github.com/digiaonline/lumen-sparkpost/actions/workflows/test.yml/badge.svg)](https://github.com/digiaonline/lumen-sparkpost/actions/workflows/test.yml)
+[![Coverage Status](https://coveralls.io/repos/github/digiaonline/lumen-sparkpost/badge.svg)](https://coveralls.io/github/digiaonline/lumen-sparkpost)
 [![Code Climate](https://codeclimate.com/github/nordsoftware/lumen-sparkpost/badges/gpa.svg)](https://codeclimate.com/github/nordsoftware/lumen-sparkpost)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/nordsoftware/lumen-sparkpost/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/nordsoftware/lumen-sparkpost/?branch=main)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/digaonline/lumen-sparkpost/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/digaonline/lumen-sparkpost/?branch=main)
 [![Latest Stable Version](https://poser.pugx.org/nordsoftware/lumen-sparkpost/version)](https://packagist.org/packages/nordsoftware/lumen-sparkpost)
 [![Total Downloads](https://poser.pugx.org/nordsoftware/lumen-sparkpost/downloads)](https://packagist.org/packages/nordsoftware/lumen-sparkpost)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
@@ -37,7 +37,7 @@ instead.
 
 ### Bootstrapping
 
-Add the following lines to ```bootstrap/app.php```:
+Add the following lines to `bootstrap/app.php`:
 
 ```php
 $app->register(Nord\Lumen\SparkPost\SparkPostServiceProvider::class);
