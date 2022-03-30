@@ -1,9 +1,9 @@
 # Lumen SparkPost
 
-[![Build Status](https://travis-ci.org/nordsoftware/lumen-sparkpost.svg?branch=master)](https://travis-ci.org/nordsoftware/lumen-sparkpost)
-[![Coverage Status](https://coveralls.io/repos/github/nordsoftware/lumen-sparkpost/badge.svg?branch=master)](https://coveralls.io/github/nordsoftware/lumen-sparkpost?branch=master)
+[![Build Status](https://travis-ci.org/nordsoftware/lumen-sparkpost.svg?branch=main)](https://travis-ci.org/nordsoftware/lumen-sparkpost)
+[![Coverage Status](https://coveralls.io/repos/github/nordsoftware/lumen-sparkpost/badge.svg?branch=main)](https://coveralls.io/github/nordsoftware/lumen-sparkpost?branch=main)
 [![Code Climate](https://codeclimate.com/github/nordsoftware/lumen-sparkpost/badges/gpa.svg)](https://codeclimate.com/github/nordsoftware/lumen-sparkpost)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/nordsoftware/lumen-sparkpost/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/nordsoftware/lumen-sparkpost/?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/nordsoftware/lumen-sparkpost/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/nordsoftware/lumen-sparkpost/?branch=main)
 [![Latest Stable Version](https://poser.pugx.org/nordsoftware/lumen-sparkpost/version)](https://packagist.org/packages/nordsoftware/lumen-sparkpost)
 [![Total Downloads](https://poser.pugx.org/nordsoftware/lumen-sparkpost/downloads)](https://packagist.org/packages/nordsoftware/lumen-sparkpost)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
